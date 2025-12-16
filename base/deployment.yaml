@@ -6,6 +6,9 @@ spec:
   replicas: 1
   template:
     spec:
+      selector:
+        matchLabels:
+          app: course-app
       containers:
         - name: course-app
           image: kyrops/course-app:1.0.0
