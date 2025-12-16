@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: production
 
 resources:
+  - namespace.yaml
   - ../../base
   - hpa.yaml
   - dragonfly.yaml
