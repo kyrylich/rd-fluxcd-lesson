@@ -4,7 +4,7 @@ metadata:
   name: dragonfly
   namespace: dragonfly-operator
 spec:
-  replicas: 1
+  replicas: 2
   image: docker.dragonflydb.io/dragonflydb/dragonfly:latest
   resources:
     requests:
