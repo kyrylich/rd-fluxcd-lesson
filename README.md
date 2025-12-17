@@ -18,6 +18,7 @@ k kustomize overlays/production
 flux get kustomizations
 ```
 
+```
 flux create secret tls course-app-tls \
 --namespace=development \
 --tls-crt-file=./course-app.pem \
@@ -27,3 +28,4 @@ flux create secret tls course-app-tls \
 --namespace=production \
 --tls-crt-file=./course-app.pem \
 --tls-key-file=./course-app-key.pem 
+```
