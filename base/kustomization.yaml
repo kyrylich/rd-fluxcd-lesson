@@ -10,3 +10,11 @@ resources:
   - deployment.yaml
   - service.yaml
   - ingress.yaml
+
+
+configMapGenerator:
+  - name: course-app-config
+    literals:
+      - HELLO_MESSAGE="Hello, it's homework from Kyrylo Meretskyi!"
+      - APP_STORE=redis
+      - APP_REDIS_URL=redis://dragonfly:6379

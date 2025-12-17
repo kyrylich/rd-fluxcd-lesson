@@ -16,7 +16,7 @@ spec:
             - containerPort: 8080
           envFrom:
             - configMapRef:
-                name: course-app-config-map
+                name: course-app-config
           readinessProbe:
             httpGet:
               path: /readyz
